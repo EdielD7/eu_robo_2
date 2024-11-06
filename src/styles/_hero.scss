@@ -1,0 +1,22 @@
+.hero {
+    padding-bottom: 5.6vw;
+    background-image: url(../images/bg-hero.png);
+    text-align: center;
+    background-size: cover;
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        li {
+            padding: 40px 0;
+        }
+    }
+
+    h1 {
+        margin-top: 144px;
+        margin-bottom: 8px;
+    }
+}
+

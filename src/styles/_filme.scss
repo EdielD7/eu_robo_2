@@ -1,5 +1,7 @@
 .filme {
     background-color: #191D1F;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
     &__text {
         display: grid;
@@ -8,9 +10,10 @@
         margin-bottom: 40px;
         
         &__sinopse {
-            font-size: 24px;
             color: #fff;
             width: 100%;
+            font-size: 24px;
+            line-height: 32px;
         }
 
         &__ficha {
@@ -19,10 +22,6 @@
             h3 {
                 color: #ffa500;
                 margin-bottom: 20px;
-            }
-
-            li {
-
             }
 
             p {

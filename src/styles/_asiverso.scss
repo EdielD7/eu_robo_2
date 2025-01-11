@@ -1,0 +1,44 @@
+.asiverso {
+    background-color: #191D1F;
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+    &__list {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        margin-top: 36px;
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            img {
+                width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            color: #ffffff;
+            font-size: 24px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            margin: 0 1vw;
+            
+            &--is-active {
+                border-bottom: 5px solid #ffffff;
+            }
+        }
+    }
+}

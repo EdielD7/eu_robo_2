@@ -1,0 +1,12 @@
+.livro{
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

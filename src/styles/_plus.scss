@@ -1,0 +1,32 @@
+@use 'variaveis';
+
+.plus {
+    background-color: #191D1F;
+    color: #fff;
+    padding-top: 90px;
+
+    &__trivias {
+        padding-left: 60px;
+        padding-right: 60px;
+
+        &__item {
+            padding-bottom: 16px;
+            counter-increment: item;
+
+            &__head {
+                background-color: #323247;
+                padding: 12px 40px;
+                display: flex;
+                .marker::before {
+                    content: counter(item) ".";
+                }
+                @include variaveis.text--big;
+            }
+
+            &__body {
+                padding: 16px 40px;
+                @include variaveis.text;
+            }
+        }
+    }
+}

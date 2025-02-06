@@ -8,12 +8,13 @@
         grid-template-columns: 2fr 1fr;
         gap: 40px;
         margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
         
         &__sinopse {
             color: #fff;
-            width: 100%;
-            font-size: 24px;
-            line-height: 32px;
         }
 
         &__ficha {
@@ -25,12 +26,9 @@
             }
 
             p {
-                font-size: 20px;
                 color: #ebebfc;
-                font-family: 'Rajdhani';
-                
+
                 span {
-                    font-family: 'Rajdhani';
                     font-weight: 600;
                 }
             }
@@ -40,9 +38,9 @@
     &__trailer {
         display: flex;
         justify-content: center;
-        
+
         iframe {
-            border-radius: 30px;
+            border-radius: 2.5vw;
             aspect-ratio: 16 / 9;
         }
     }

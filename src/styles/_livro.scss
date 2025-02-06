@@ -1,8 +1,13 @@
 .livro{
+    padding-top: 80px;
     &__container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         gap: 40px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
 
         img {
             width: 100%;

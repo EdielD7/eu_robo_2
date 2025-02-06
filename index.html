@@ -14,36 +14,43 @@
 </head>
 
 <body>
-    <header class="hero">
-        <nav>
-            <ul>
-                <li>Trailer</li>
-                <li>Leis</li>
-                <li>Origem</li>
-                <li>Série Robôs</li>
-                <li>Curiosidades</li>
+    <header>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav class="nav-header">
+            <ul class="text--small">
+                <li><a href="#filme">Filme</a></li>
+                <li><a href="#leis">Leis</a></li>
+                <li><a href="#origem">Origem</a></li>
+                <li><a href="#asiverso">Asiverso</a></li>
+                <li><a href="#plus">Curiosidades</a></li>
             </ul>
         </nav>
-        <h1>
-            <img src="./src/images/I, Robot.png" alt="I, Robot">
-        </h1>
-        <h2 class="slogan">
-            O Filme, o Livro e o Conto
-        </h2>
     </header>
-    <section class="filme">
+    <main class="hero">
+        <div class="hero__title">
+            <h1>
+                <img src="./src/images/I, Robot.png" alt="I, Robot">
+            </h1>
+            <h2 class="slogan">
+                O Filme, o Livro e o Conto
+            </h2>
+        </div>
+    </main>
+
+    <!-- Seção sobre o filme -->
+    <section class="filme" id="filme">
         <div class="container">
             <div class="filme__text">
                 <div class="filme__text__sinopse">
-                    <p class="destaque">
-                        I, Robot (bra: Eu, Robô; prt: Eu, Robot) é um filme americano de 2004, dos gêneros ação,
-                        suspense e ficção científica, dirigido por Alex Proyas para a 20th Century Fox, com roteiro
-                        baseado em vários contos do livro homônimo de Isaac Asimov.
-                    </p>
+                    <p class="text--big">I, Robot (bra: Eu, Robô; prt: Eu, Robot) é um filme americano de 2004, dos gêneros ação, suspense e ficção científica, dirigido por Alex Proyas para a 20th Century Fox, com roteiro baseado em vários contos do livro homônimo de Isaac Asimov.</p>
                 </div>
                 <div class="filme__text__ficha">
                     <h3 class="title--small">Ficha Técnica</h3>
-                    <ul class="ficha__corpo">
+                    <ul class="ficha__corpo text--small">
                         <li>
                             <p>
                                 <span>Título original: </span>I, Robot
@@ -83,43 +90,35 @@
                 </div>
             </div>
             <div class="filme__trailer">
-                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ry1N9lrzt7A?si=H1RXQN4CCtx5SvS6"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ry1N9lrzt7A?si=H1RXQN4CCtx5SvS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>
-    <section class="leis">
+
+    <!-- Seção sobre as Leis -->
+    <section class="leis" id="leis">
         <div class="container">
             <div class="leis__text">
                 <h2 class="title">AS 3 LEIS DA ROBÓTICA</h2>
                 <ol>
                     <li class="leis__lei">
                         <span>I</span>
-                        <p class="destaque">Um robô não pode ferir um ser humano ou, por inação, permitir que um ser
-                            humano sofra algum mal.</p>
+                        <p class="destaque">Um robô não pode ferir um ser humano ou, por inação, permitir que um ser humano sofra algum mal.</p>
                     </li>
                     <li>
                         <span>II</span>
-                        <p class="destaque">Um robô deve obedecer às ordens que lhe sejam dadas por seres humanos,
-                            exceto nos casos em que entrem em conflito com a Primeira Lei.</p>
+                        <p class="destaque">Um robô deve obedecer às ordens que lhe sejam dadas por seres humanos, exceto nos casos em que entrem em conflito com a Primeira Lei.</p>
                     </li>
                     <li>
                         <span>III</span>
-                        <p class="destaque">Um robô deve proteger sua própria existência, desde que tal proteção não
-                            entre em conflito com a Primeira ou Segunda Leis.</p>
+                        <p class="destaque">Um robô deve proteger sua própria existência, desde que tal proteção não entre em conflito com a Primeira ou Segunda Leis.</p>
                     </li>
                 </ol>
             </div>
             <div class="leis__origin">
                 <div class="leis__origin__text text">
-                    <p>As Três Leis da Robótica foram idealizadas pelo escritor Isaac Asimov a fim de permitir o
-                        controle e limitar os comportamentos dos robôs que este trazia à existência em seus livros de
-                        ficção científica.</p>
-                    <p>Asimov foi um prolífico escritor não apenas de ficção científica mas também de obras científicas,
-                        publicando ao todo mais de 500 livros e contos ao longo dos seus 52 anos de carreira; entre eles
-                        incluindo-se "Eu, Robô" e "Manual de Robótica, 56 Edição, 2058 d.C.".</p>
+                    <p>As Três Leis da Robótica foram idealizadas pelo escritor Isaac Asimov a fim de permitir o controle e limitar os comportamentos dos robôs que este trazia à existência em seus livros de ficção científica.</p>
+                    <p>Asimov foi um prolífico escritor não apenas de ficção científica mas também de obras científicas, publicando ao todo mais de 500 livros e contos ao longo dos seus 52 anos de carreira; entre eles incluindo-se "Eu, Robô" e "Manual de Robótica, 56 Edição, 2058 d.C.".</p>
                 </div>
                 <div class="leis__origin__img">
                     <img src="./src/images/asimov.png" alt="Isaac Asimov">
@@ -127,20 +126,17 @@
             </div>
         </div>
     </section>
-    <section class="we-robots">
+
+    <!-- Seção título Eu, Robô -->
+    <section class="we-robots" id="origem">
         <div class="container text">
             <h2 class="title">UM TÍTULO, TRÊS OBRAS INDEPENDENTES</h2>
-            <p>O filme I, Robot originalmente não tinha ligações com Série Robôs de Isaac Asimov. Tudo começou com um
-                roteiro original escrito em 1995 por Jeff Vintar, intitulado Hardwired. O script era sobre um misterioso
-                assassinato inspirado nas histórias de Agatha Christie que se focava inteiramente na cena de um crime,
-                com um personagem humano solitário, o agente do FBI Del Spooner, que investiga o assassinato de um
-                cientista recluso chamado Dr Hogenmiller, e interrogar um elenco de de máquinas suspeitas que incluem
-                Sonny, o robô, HECTOR o supercomputador com um smiley, o holograma de Dr Hogenmiller, além de vários
-                outros exemplos de inteligência artificial.</p>
+            <p>O filme I, Robot originalmente não tinha ligações com Série Robôs de Isaac Asimov. Tudo começou com um roteiro original escrito em 1995 por Jeff Vintar, intitulado Hardwired.</p>
+            <p> O script era sobre um misterioso assassinato inspirado nas histórias de Agatha Christie que se focava inteiramente na cena de um crime, com um personagem humano solitário, o agente do FBI Del Spooner, que investiga o assassinato de um cientista recluso chamado Dr Hogenmiller, e interrogar um elenco de de máquinas suspeitas que incluem Sonny, o robô, HECTOR o supercomputador com um smiley, o holograma de Dr Hogenmiller, além de vários outros exemplos de inteligência artificial.</p>
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide">
-                        <img src="/src/images/carousel/thumb01.png alt=" #">
+                        <img src="/src/images/carousel/thumb01.png" alt=" #">
                     </div>
                     <div class="slide">
                         <img src="/src/images/carousel/thumb02.png" alt="#">
@@ -161,33 +157,25 @@
                 </div>
             </div>
             <div class="we-robots__grid">
-                <p>O projeto foi adquirido pela primeira vez pela Walt Disney Pictures para Bryan Singer para dirigir.
-                    Vários anos mais tarde, a 20th Century Fox adquiriu os direitos, e escalou Alex Proyas como diretor.
-                    Jeff Vintar foi trazido de volta no projeto . Quando o estúdio decidiu usar o nome de "I, Robot",
-                    ele incorporou as Três Leis da Robótica, e substituiu seu personagem principal feminino pela Dra.
-                    Susan Calvin, um dos poucos personagens recorrentes da série de Asimov. O livro I, Robot de Isaac
-                    Asimov uma coletânea de contos; mas o novo roteiro incorporou muitos elementos de outra história da
-                    série, The Caves of Steel, um mistério de assassinato envolvendo um robô e um policial. Akiva
-                    Goldsman foi contratado no final do processo de reescrever o roteiro para Will Smith.</p>
+                <div>
+                    <p>O projeto foi adquirido pela primeira vez pela Walt Disney Pictures para Bryan Singer para dirigir. Vários anos mais tarde, a 20th Century Fox adquiriu os direitos, e escalou Alex Proyas como diretor. Jeff Vintar foi trazido de volta no projeto . Quando o estúdio decidiu usar o nome de "I, Robot", ele incorporou as Três Leis da Robótica, e substituiu seu personagem principal feminino pela Dra. Susan Calvin, um dos poucos personagens recorrentes da série de Asimov.</p>
+                    <p> O livro I, Robot de Isaac Asimov uma coletânea de contos; mas o novo roteiro incorporou muitos elementos de outra história da série, The Caves of Steel, um mistério de assassinato envolvendo um robô e um policial. Akiva Goldsman foi contratado no final do processo de reescrever o roteiro para Will Smith.</p>
+                </div>
                 <img src="./src/images/poster.png" alt="Poster do filme Eu, Robô">
             </div>
         </div>
     </section>
+
+    <!-- Seção Livros -->
     <section class="livro">
         <div class="container">
             <h2 class="title">EU, ROBÔ DE ASIMOV</h2>
             <div class="livro__container">
                 <img src="./src/images/capa-livro.png" alt="Capa do livro Eu, Robô">
                 <div class="livro__text text">
-                    <p>Já o livro I, Robot (em português Eu, Robô) é uma coletânea literária de contos escrita pelo
-                        russo Isaac Asimov. O livro é composto de 10 contos que, de forma sucessiva, discorrem sobre a
-                        evolução dos robôs através do tempo.</p>
-                    <p>A obra se inicia com o conto intitulado "Robbie", um robô-babá incapaz de falar que é
-                        discriminado e repudiado pelas pessoas da Terra, resultando na proibição do uso de robôs no
-                        planeta.</p>
-                    <p>"Eu, robô" culmina no último conto, no qual a Terra é governada pelo "Coordenador Mundial"
-                        Stephen Byerley (sob o qual pairam suspeitas de ser um robô) que administra a Terra através do
-                        uso de 4 "máquinas" que ditam o funcionamento da produção, consumo e emprego da mão-de-obra.</p>
+                    <p>Já o livro I, Robot (em português Eu, Robô) é uma coletânea literária de contos escrita pelo russo Isaac Asimov. O livro é composto de 10 contos que, de forma sucessiva, discorrem sobre a evolução dos robôs através do tempo.</p>
+                    <p>A obra se inicia com o conto intitulado "Robbie", um robô-babá incapaz de falar que é discriminado e repudiado pelas pessoas da Terra, resultando na proibição do uso de robôs no planeta.</p>
+                    <p>"Eu, robô" culmina no último conto, no qual a Terra é governada pelo "Coordenador Mundial" Stephen Byerley (sob o qual pairam suspeitas de ser um robô) que administra a Terra através do uso de 4 "máquinas" que ditam o funcionamento da produção, consumo e emprego da mão-de-obra.</p>
                 </div>
             </div>
         </div>
@@ -197,26 +185,21 @@
             <h2 class="title">“COPIA, SÓ NÃO FAZ IGUAL”</h2>
             <div class="conto__container">
                 <div class="conto__text text">
-                    <p>Mas engana-se quem imagina que Asimov seja o autor da primeira 'I, Robot' Escrita. O título "Eu,
-                        Robô" não foi criado por Asimov. Ele foi sugerido pelo editor de Asimov, John W. Campbell,
-                        inspirado em um conto de ficção científica homônimo escrito por Eando Binder (pseudônimo de Earl
-                        e Otto Binder) em 1939.</p>
-                    <p>O conto original "Eu, Robô" (1939) de Eando Binder (pseudônimo dos irmãos Earl e Otto Binder) é
-                        bem diferente da obra de Isaac Asimov, apesar de compartilharem o mesmo título. Ele é uma
-                        história de ficção científica emocional e reflexiva sobre a relação entre humanos e robôs,
-                        explorando temas como a humanidade e a consciência robótica de uma forma mais pessoal.</p>
-                    <p>O "Eu, Robô" de Eando Binder foi um precursor no tema dos robôs com consciência e sentimentos,
-                        abordando questões de preconceito e o que significa ser humano. Embora muitas vezes ofuscado
-                        pela obra posterior de Asimov, o conto de Binder permanece um marco importante na evolução da
-                        ficção científica, abrindo caminho para debates profundos sobre a humanidade e a tecnologia.</p>
+                    <p>Mas engana-se quem imagina que Asimov seja o autor da primeira 'I, Robot' Escrita. O título "Eu, Robô" não foi criado por Asimov. Ele foi sugerido pelo editor de Asimov, John W. Campbell, inspirado em um conto de ficção científica homônimo escrito por Eando Binder (pseudônimo de Earl e Otto Binder) em 1939.</p>
+                    <p>O conto original "Eu, Robô" (1939) de Eando Binder (pseudônimo dos irmãos Earl e Otto Binder) é bem diferente da obra de Isaac Asimov, apesar de compartilharem o mesmo título. Ele é uma história de ficção científica emocional e reflexiva sobre a relação entre humanos e robôs, explorando temas como a humanidade e a consciência robótica de uma forma mais pessoal.</p>
+                    <p>O "Eu, Robô" de Eando Binder foi um precursor no tema dos robôs com consciência e sentimentos, abordando questões de preconceito e o que significa ser humano. Embora muitas vezes ofuscado pela obra posterior de Asimov, o conto de Binder permanece um marco importante na evolução da ficção científica, abrindo caminho para debates profundos sobre a humanidade e a tecnologia.</p>
                 </div>
                 <img src="./src/images/conto.png" alt="Conto 'I, Robot' de Eando Binder">
             </div>
         </div>
     </section>
-    <section class="asiverso">
+
+    <!-- Seção universo Asimov - Asiverso -->
+    <section class="asiverso" id="asiverso">
         <div class="container">
             <h2 class="title">O UNIVERSO “POSITRÔNICO” DE ASIMOV</h2>
+
+            <!-- Navegação por abas -->
             <nav class="asiverso__tabs">
                 <button data-tab-button="robos" class="asiverso__tabs__button asiverso__tabs__button--is-active">
                     Série Robôs
@@ -226,9 +209,6 @@
                 </button>
                 <button data-tab-button="fundacao" class="asiverso__tabs__button">
                     Série Fundação
-                </button>
-                <button data-tab-button="outras" class="asiverso__tabs__button">
-                    Outras Obras
                 </button>
             </nav>
             <ul data-tab-id="robos" class="asiverso__list asiverso__list--is-active">
@@ -284,56 +264,104 @@
             </ul>
         </div>
     </section>
-    <section class="plus">
+
+    <!-- Seção de Curiosidades -->
+    <section class="plus" id="plus">
         <div class="container">
             <h2 class="title">CURIOSIDADES</h2>
             <ul class="plus__trivias">
                 <li class="plus__trivias__item">
-                    <div class="plus__trivias__item__head">
-                        <p class="marker">&nbsp;</p>
-                        <p>Título Original</p>
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Título Original</p>
                     </div>
-                    <p class="plus__trivias__item__body">O título "Eu, Robô" não foi criado por Asimov. Ele foi sugerido
-                        pelo editor de Asimov, John W. Campbell, inspirado em um conto de ficção científica homônimo
-                        escrito por Eando Binder (pseudônimo de Earl e Otto Binder) em 1939. O conto de Binder é sobre
-                        um robô que desenvolve consciência e emoções.</p>
+                    <p class="plus__trivias__item__body text--small">O título "Eu, Robô" não foi criado por Asimov. Ele foi sugerido pelo editor de Asimov, John W. Campbell, inspirado em um conto de ficção científica homônimo escrito por Eando Binder (pseudônimo de Earl e Otto Binder) em 1939. O conto de Binder é sobre um robô que desenvolve consciência e emoções.</p>
                 </li>
                 <li class="plus__trivias__item">
-                    <div class="plus__trivias__item__head">
-                        <p class="marker">&nbsp;</p>
-                        <p>Coletânea de Contos</p>
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Coletânea de Contos</p>
                     </div>
-                    <div class="plus__trivias__item__body">"Eu, Robô" não é um romance, mas uma coletânea de nove contos
-                        interligados por uma narrativa em moldura. Todos os contos foram publicados anteriormente em
-                        revistas de ficção científica entre 1940 e 1950. A história é narrada por Susan Calvin, uma
-                        robopsicóloga da U.S. Robots and Mechanical Men Corporation, que reflete sobre os casos mais
-                        importantes de sua carreira.</div>
+                    <div class="plus__trivias__item__body text--small">"Eu, Robô" não é um romance, mas uma coletânea de nove contos interligados por uma narrativa em moldura. Todos os contos foram publicados anteriormente em revistas de ficção científica entre 1940 e 1950. A história é narrada por Susan Calvin, uma robopsicóloga da U.S. Robots and Mechanical Men Corporation, que reflete sobre os casos mais importantes de sua carreira.</div>
                 </li>
                 <li class="plus__trivias__item">
-                    <div class="plus__trivias__item__head">
-                        <p class="marker">&nbsp;</p>
-                        <p>O Papel de Susan Calvin</p>
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>O Papel de Susan Calvin</p>
                     </div>
-                    <div class="plus__trivias__item__body">Susan Calvin é uma personagem central em "Eu, Robô" e em
-                        outras histórias de Asimov sobre robôs. Ela é frequentemente descrita como fria e impassível,
-                        características que refletem seu profundo interesse pela psicologia robótica em detrimento de
-                        relacionamentos humanos. Calvin é uma das primeiras personagens femininas importantes em obras
-                        de ficção científica que não se encaixa em estereótipos tradicionais, sendo uma mulher altamente
-                        inteligente e complexa.</div>
+                    <div class="plus__trivias__item__body text--small">Susan Calvin é uma personagem central em "Eu, Robô" e em outras histórias de Asimov sobre robôs. Ela é frequentemente descrita como fria e impassível, características que refletem seu profundo interesse pela psicologia robótica em detrimento de relacionamentos humanos. Calvin é uma das primeiras personagens femininas importantes em obras de ficção científica que não se encaixa em estereótipos tradicionais, sendo uma mulher altamente inteligente e complexa.</div>
                 </li>
                 <li class="plus__trivias__item">
-                    <div class="plus__trivias__item__head">
-                        <p class="marker">&nbsp;</p>
-                        <p>Influência Cultural</p>
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Influência Cultural</p>
                     </div>
-                    <div class="plus__trivias__item__body">As ideias de "Eu, Robô" tiveram um impacto duradouro, não
-                        apenas na ficção científica, mas também no campo da inteligência artificial e na robótica real.
-                        As Três Leis da Robótica são frequentemente mencionadas em discussões sobre ética na IA, mesmo
-                        que de forma teórica, e inspiraram muitos escritores e cientistas.</div>
+                    <div class="plus__trivias__item__body text--small">As ideias de "Eu, Robô" tiveram um impacto duradouro, não apenas na ficção científica, mas também no campo da inteligência artificial e na robótica real. As Três Leis da Robótica são frequentemente mencionadas em discussões sobre ética na IA, mesmo que de forma teórica, e inspiraram muitos escritores e cientistas.</div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Audi RSQ</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">O carro utilizado pelo personagem de Will Smith é o carro conceito da Audi RSQ que foi criado exclusivamente para o filme. O diretor Alex Proyas deu alguns palpites no design para ficar do jeito que ele queria. Os outros veículos vistos no longa são os modelos Audi A2, A6 e TT modificados.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Harold Lloyd</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">O nome do outro motorista envolvido no acidente de carro com o detetive Spooner, que acabou mutilando o detetive, é Harold Lloyd, ator e comediante do cinema mudo norte-americano, que perdeu vários dedos após um acidente com bomba cenográfica mal montada.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>VIKI</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">VIKI é a vilã do filme e sua vontade de tomar o controle da sociedade das mãos dos seres humanos para manter a ordem é conhecida como lei zero da robótica: um robô pode não prejudicar a humanidade, ou por inação, permitir que a humanidade se prejudique. Diferente da primeira lei da robótica, que é de caráter individual: um robô não pode ferir um humano ou permitir que um humano sofra algum mal.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Acidente</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">Na cena em que Will Smith perde controle com uma moto, em alta velocidade, ele de fato perdeu o controle e arrebentou com a moto antes de cair dela, a quase 100km por hora. A moto é uma MV Agusta F4-SPR, que só teve 100 exemplares produzidos no mundo.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Sonny</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">O robô consciente Sonny foi criado da mesma maneira que Gollum, na trilogia Senhor dos Anéis. Quem fez os movimentos e a voz do robô foi o ator Alan Tudyk (Firefly), bastante elogiado pelo diretor e pelos colegas de cena por sua atuação.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Alfred Lanning</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">O Dr. Alfred Lanning, pioneiro da robótica, nasceu em 1971 e tinha 64 quando morreu, mesma idade do ator que o interpretou no filme na época, James Cromwell. Isso coloca o filme em 2035.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>O Planeta Proibido</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">O design da sala do executivo da U.S. Robotics, Lawrence Robertson, foi baseada no design do primeiro robô totalmente funcional construído pela MGM para o filme O Planeta Proibido (1956), Robby.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Refilmagem</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">Nenhuma cena precisou ser filmada de novo, o que é bem raro para um filme deste tamanho e complexidade em efeitos especiais.
+                    </div>
+                </li>
+                <li class="plus__trivias__item">
+                    <div class="plus__trivias__item__head text">
+                        <p><span class="marker">&nbsp;</span>Hardwired</p>
+                    </div>
+                    <div class="plus__trivias__item__body text--small">O roteiro original era para um filme chamado Hardwired e era uma típica história de detetives baseada nas três leis da robótica. Mas quando o roteiro caiu nas mãos da Fox, depois de passar pelas mãos da Disney e do diretor Bryan Singer, o novo diretor Alex Proyas e o roteirista, Jeff Vintar, decidiram transformar o longa em uma superprodução. A Fox então conseguiu os direitos dos contos relacionados em Eu, Robô, de Isaac Asimov e Vintar passou dois anos adaptando o roteiro de Hardwired para servir como uma <b>décima história da coletânea original</b> de Asimov. Na finalização, o roteirista Akiva Goldsman criou o personagem de Will Smith, o detetive Spooner, que originalmente tinha sido oferecido a Denzel Washington.
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
+    <script src="src/main.js"></script>
+    <script src="src/mobile-navbar.js"></script>
 </body>
 
 </html>

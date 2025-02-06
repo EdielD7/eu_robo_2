@@ -16,6 +16,24 @@
     font-family: 'Rajdhani', Helvetica, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
 ul {
     list-style: none;
 }
@@ -28,44 +46,42 @@ ul {
     padding-right: 20px;
 }
 
+@mixin text($fontSize: 2.0rem) {
+    font-size: $fontSize;
+    line-height: $fontSize + 0.4rem;
+    font-weight: 400;
+}
+
 .text {
-    p {
-        font-family: 'Rajdhani';
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 400;
-    }
+    @include text;
 
     &--big {
-        font-family: 'Rajdhani';
-        font-size: 32px;
-        line-height: 36px;
-        font-weight: 400;
+        @include text(2.4rem);
+    }
+
+    &--small {
+        @include text(1.6rem);
     }
 
     p:not(:last-child) {
-        margin-bottom: 32px;
+        margin-bottom: 3.2rem;
     }
 }
 
 .destaque {
-    font-family: 'Rajdhani';
-    font-size: 24px;
-    line-height: 36px;
+    @include text(2.4rem);
 }
 
 .title {
     font-family: 'Audiowide';
     font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 3.6rem;
 
     &--small {
         font-family: 'Audiowide';
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 400;
+        @include text(1.6rem);
     }
 }

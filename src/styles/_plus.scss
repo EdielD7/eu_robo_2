@@ -6,9 +6,8 @@
     padding-top: 90px;
 
     &__trivias {
-        padding-left: 60px;
-        padding-right: 60px;
-
+        max-width: 840px;
+        margin: 0 auto;
         &__item {
             padding-bottom: 16px;
             counter-increment: item;
@@ -20,12 +19,10 @@
                 .marker::before {
                     content: counter(item) ".";
                 }
-                @include variaveis.text--big;
             }
 
             &__body {
                 padding: 16px 40px;
-                @include variaveis.text;
             }
         }
     }

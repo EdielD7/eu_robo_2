@@ -3,22 +3,28 @@
     color: #fff;
     padding-top: 120px;
     padding-bottom: 90px;
-    padding-left: 300px;
-    padding-right: 300px;
 
     &__list {
         display: none;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 60px;
+        gap: 4.17vw;
+        max-width: 840px;
+        margin: 0 auto;
         margin-top: 36px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
         &--is-active {
             display: grid;
         }
 
         &__item {
+            max-width: 240px;
             img {
-                width: 100%;
+                width: 100%; 
                 border-radius: 4px;
             }
         }
@@ -35,9 +41,11 @@
             padding-bottom: 5px;
             background: none;
             margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
             
             &--is-active {
-                border-bottom: 5px solid #ffffff;
+                border-color: #ffffff;
             }
         }
     }
